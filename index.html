@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Tiwari - Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #0073b1;
+            color: #fff;
+            border-radius: 8px 8px 0 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        .content {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .content a {
+            color: #0073b1;
+            text-decoration: none;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        .section:hover {
+            background-color: #e9f6ff;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
+        .section p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+            display: none;
+            padding: 10px 0;
+        }
+        .section .summary {
+            font-size: 1em;
+            line-height: 1.4;
+            color: #777;
+        }
+        .section.active p {
+            display: block;
+        }
+        .section.active .summary {
+            display: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Aditya Tiwari</h1>
+            <p>Integration Specialist</p>
+        </header>
+        <div class="content">
+            <div class="section">
+                <h2>About Me</h2>
+                <div class="summary">Learn about Aditya Tiwari, his passions, and experience.</div>
+                <p>Hello! My name is Aditya Tiwari. I am an Integration Specialist with a passion for coding and reading books. I have over 10 years of experience in developing, architecting, delivering, and executing operational strategies to promote organizational growth with the optimal utilization of emerging technologies.</p>
+            </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <div class="summary">A comprehensive list of Aditya's technical skills.</div>
+                <p>
+                    <strong>Technologies:</strong> ASP.Net, ADO.Net API, Web Services, WCF, LINQ, .Net Core, Azure, Logic Apps, Function Apps, Key Vaults, App Service, Storage Account, Azure Search, APIM, Azure AD, Static Web, Bicep, ARM templates<br>
+                    <strong>Programming Languages:</strong> C#, C fundamental, Node JS<br>
+                    <strong>Web Development:</strong> ASP, Java Script, jQuery, Angular JS, JSON, AJAX, HTML, HTML 5, DHTML, CSS 3.0, XML, React JS, Node JS<br>
+                    <strong>Database:</strong> MS SQL server, Oracle SQL Developer, MS Access, Oracle, NO SQL, Blob Storage, Azure Table Storage, Cosmos DB, Elasticsearch<br>
+                    <strong>Cloud:</strong> Azure, Logic Apps, Function Apps, Cosmos DB, API Management, Data Bricks, Data Hubs, Service Bus, Key-Vault<br>
+                    <strong>DevOps:</strong> Jenkins, Build Master, TFS, Azure DevOps, Azure Kudu<br>
+                    <strong>Other Tools:</strong> NUnit, FxCop, MS-Office, Visio, Log4Net, Microsoft Enterprise Library, Dot Trace Profiler
+                </p>
+            </div>
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="summary">A detailed overview of Aditya's professional journey.</div>
+                <p>
+                    <strong>Supersport</strong> (Apr 2019 - Current) - Snr. Consultant<br>
+                    <strong>Nihilent Technologies</strong> (Aug 2015 - Mar 2019) - Snr. Net Consultant<br>
+                    <strong>Nihilent Technologies</strong> (Jan 2015 - Jul 2015) - Snr. Net Specialist<br>
+                    <strong>Global Technologies</strong> (Mar 2013 - Dec 2014) - .Net Developer<br>
+                    <strong>SIPI Pvt. Ltd</strong> (Aug 2012 - Feb 2013) - Developer
+                </p>
+            </div>
+            <div class="section">
+                <h2>Projects</h2>
+                <div class="summary">Highlights of key projects Aditya has worked on.</div>
+                <p>
+                    <strong>Supersport</strong>: Design backend integration flow, data fault and system fallback, revamping existing Ingest/Expose solution.<br>
+                    <strong>Multichoice</strong>: Designing database, defining data-flow and system flow, developing APIs to be consumed by 3rd party, integration with 3rd party vendor products.<br>
+                    <strong>Supply Chain and Warehouse management system (FPT)</strong>: Module design and implementation, developing ASP.Net web pages with C#, designing database, defining dataflow and system flow.<br>
+                    <strong>Sello ecommerce Web App (Sello India)</strong>: Requirement gathering, effort estimation, technical design, project planning and monitoring, execution and documentation of business requirement assessments.
+                </p>
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <div class="summary">Aditya's academic background and qualifications.</div>
+                <p>
+                    <strong>Bachelor of Engineering in Computer Science and Engineering</strong> - UPTU (2008-2012)<br>
+                    <strong>HSC</strong> - UP Board (2006-2008)<br>
+                    <strong>SSC</strong> - UP Board (2005-2006)
+                </p>
+            </div>
+            <div class="section">
+                <h2>Certifications</h2>
+                <div class="summary">Professional certifications Aditya has obtained.</div>
+                <p>
+                    <strong>Microsoft Azure Fundamentals (AZ-900)</strong><br>
+                    <strong>Developing Solutions for Microsoft Azure (AZ-204)</strong><br>
+                    <strong>Microsoft Data Fundamentals (DP-900)</strong><br>
+                    <strong>Microsoft Certified: Azure Cosmos DB Developer Specialty (DP-400)</strong>
+                </p>
+            </div>
+            <div class="section">
+                <h2>Contact</h2>
+                <div class="summary">How to get in touch with Aditya.</div>
+                <p>
+                    Email: <a href="mailto:adityatiwarisa@gmail.com">adityatiwarisa@gmail.com</a><br>
+                    LinkedIn: <a href="https://www.linkedin.com/in/aditya-tiwari-sa/" target="_blank">https://www.linkedin.com/in/aditya-tiwari-sa/</a><br>
+                    GitHub: <a href="https://github.com/adityatwr" target="_blank">https://github.com/adityatwr</a><br>
+                    Upwork: <a href="https://www.upwork.com/freelancers/~01cebd5e6d1c90fd7b?mp_source=share" target="_blank">https://www.upwork.com/freelancers/~01cebd5e6d1c90fd7b?mp_source=share</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Aditya Tiwari</p>
+    </footer>
+</body>
+</html>
